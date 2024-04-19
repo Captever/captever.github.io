@@ -1,11 +1,34 @@
 ---
-title: "Post: Notice"
+title: "Documents"
 categories:
   - Post Formats
 tags:
   - Post Formats
-  - notice
+link: https://github.com
 ---
+
+# tag
+
+> Only one thing is impossible for God: To find any sense in any copyright law on the planet.
+  
+> <cite><a href="http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html">Mark Twain</a></cite>
+
+
+# link
+
+This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.
+
+> And this is how a quote looks.
+
+Some [link](#) can also be shown.
+
+
+# video
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/-PVofD2A9t8?controls=0" frameborder="0" allowfullscreen></iframe>
+
+
+# notice
 
 A notice displays information that explains nearby content. Often used to call attention to a particular detail.
 
