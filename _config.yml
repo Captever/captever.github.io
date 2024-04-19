@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Lee Sangwon"
   avatar           : "/assets/images/CherryBlossom_Uenopark.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Just a **programmer**. Trying to learn ***Rust language.***"
+  location         : "Seoul, Republic of Korea"
   email            : "captever6@gmail.com"
   links:
     - label: "Email"
