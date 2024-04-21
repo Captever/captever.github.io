@@ -1,5 +1,6 @@
 ---
 title: "Post: Gallery"
+lang: en
 categories:
   - Post Formats
 tags:

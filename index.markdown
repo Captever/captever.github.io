@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+# Current goal
+
+Game Development with Rust and Bevy

@@ -1,5 +1,6 @@
 ---
 title: "Post: Image (Standard)"
+lang: en
 categories:
   - Post Formats
 tags:

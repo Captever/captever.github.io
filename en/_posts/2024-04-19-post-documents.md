@@ -1,5 +1,6 @@
 ---
 title: "Documents  *with* **Title Markdown**"
+lang: en
 # classes: wide
 categories:
   - Post Formats

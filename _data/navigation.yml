@@ -1,9 +1,21 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About Me"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "English"
+    url: /en/
+  - title: "한국어"
+    url: /ko/
+  - title: "日本語"
+    url: /ja/
+  # - title: "Language"
+  #   children:
+  #     - title: "English"
+  #       url: "/en/"
+  #     - title: "Korean"
+  #       url: "/ko/"
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

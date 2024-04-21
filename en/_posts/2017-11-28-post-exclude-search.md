@@ -1,5 +1,6 @@
 ---
 title:  "Exclude Post from Search Index"
+lang: en
 search: false
 categories: 
   - Jekyll
