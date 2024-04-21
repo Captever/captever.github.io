@@ -1,4 +1,4 @@
 ---
 layout: home.en
+title: English page
 ---
-# English page
