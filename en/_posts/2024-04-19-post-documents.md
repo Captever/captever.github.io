@@ -1,12 +1,12 @@
 ---
 title: "Documents  *with* **Title Markdown**"
 lang: en
-# classes: wide
+classes: narrow
 categories:
   - Post Formats
 tags:
   - Post Formats
-link: https://github.com
+# link: https://github.com
 excerpt: "This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages."
 header:
   image: https://live.staticflickr.com/8084/8396909762_813a2b1829_h.jpg
@@ -89,7 +89,7 @@ Want to wrap several paragraphs or other elements in a notice? Using Liquid to c
 ```
 
 {% capture notice-2 %}
-#### New Site Features
+## New Site Features
 
 * You can now have cover images on blog pages
 * Drafts will now auto-save while writing
@@ -449,9 +449,9 @@ This allows you to denote <var>variables</var>.
 
 Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use `figure` with the appropriate `class`. Each instance of `figure` is auto-numbered and displayed in the caption.
 
-### Figures (for images or video)
+## Figures (for images or video)
 
-#### One Up
+### One Up
 
 <figure>
 	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
@@ -460,7 +460,7 @@ Here are some examples of what a post with images might look like. If you want t
 
 Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
 
-#### Two Up
+### Two Up
 
 Apply the `half` class like so to display two images side by side that share the same caption.
 
@@ -480,7 +480,7 @@ And you'll get something that looks like this:
 	<figcaption>Two images.</figcaption>
 </figure>
 
-#### Three Up
+### Three Up
 
 Apply the `third` class like so to display three images side by side that share the same caption.
 
@@ -505,7 +505,7 @@ And you'll get something that looks like this:
 
 # syntax highlight
 
-### Code Blocks in Lists
+## Code Blocks in Lists
 
 Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., `1.`). Usually this will mean indenting 3 spaces instead of 4.
 
@@ -523,7 +523,7 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
 3. Now you can do this.
 
 
-### hightlight with line os
+## hightlight with line os
 
 {% highlight javascript linenos %}
 // 'gulp html' -- does nothing
@@ -535,7 +535,7 @@ gulp.task('html', () => {
 {% endhighlight %}
 
 
-### GitHub Gist Embed
+## GitHub Gist Embed
 
 An example of a Gist embed below.
 
