@@ -1,5 +1,7 @@
 ---
 title: "[Go(Golang)] Go 문법 - 구조체의 멤버 함수(struct member function)"
+excerpt: Go 언어의 구조체 멤버 함수에 대해
+layout: single
 lang: ko
 categories:
   - Go
