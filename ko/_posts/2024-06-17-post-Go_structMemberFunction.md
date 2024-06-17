@@ -25,7 +25,7 @@ tags:
 
 각 사람은 `Greet()` 함수를 통해 인삿말을 전달할 수 있다.
 
-```Go
+```go
 package main
 
 import (
