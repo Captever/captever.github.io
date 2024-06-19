@@ -43,6 +43,7 @@ Snake Case는 주로 `Django, Flask` 같이 파이썬과 관련된 프레임워�
 }
 ```
 
+
 # Go 언어에서의 JSON Convention
 Go 언어를 작업하다보니 JSON Convention을 찾기 시작한 건데, ChatGPT에 물어봐도 Go는 현재 관례는 없는 듯하다. 짧게 알아 본 바로는 Snake Case나 Camel Case를 선택할 수 있다는 입장이다.
 
@@ -68,6 +69,7 @@ type Person struct {
     PhoneNumber string `json:"phone_number"`
 }
 ```
+
 
 
 # 중요한 것은
