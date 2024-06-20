@@ -1,0 +1,28 @@
+---
+title: "[Go(Golang)] Trouble Shooting - Error reading message: websocket: close 1005 (no status)"
+excerpt: "트러블 슈팅 - Error reading message: websocket: close 1005 (no status)"
+layout: single
+lang: ko
+categories:
+  - Convention
+tags:
+  - Convention
+  - JSON
+---
+
+
+# 상황
+Unity 클라이언트에서 Go 서버로 접근하는 상황
+
+
+# Unity Client
+Go에서 서버를 활성화하고, Unity 개발 환경에서 Play로 접속한다.
+
+이후 Unity에서 Play를 Off하면 아래의 사진처럼 서버에서 에러가 발생한다.
+![error1005.png](/assets/resources/Go/websocket- close 1005 (not status).png){: .align-center}
+
+클라이언트가 강제 종료 되더라도, 서버랑 연결을 끊고 나올 수 있도록 하는 방법을 찾아야 할 거 같다.
+
+
+# 해결책
+보완하는대로 추가할 예정...
