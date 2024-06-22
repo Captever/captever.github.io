@@ -1,13 +1,14 @@
 ---
-title: "[Unity(C#)] 기초 환경 설정 - WebSocket 통신을 위한 WebSocketSharp 설치하기"
-excerpt: "WebSocketSharp - WebSocket 패키지를 이용하기 위한 기초 환경 설정"
+title: "[Unity(C#)] 서버 데이터 전송 - Json 형식으로 변환"
+excerpt: "서버에 데이터를 전송하기 위해 데이터를 JSON 형식으로 변환하는 과정에서 생긴 논점"
 layout: single
 lang: ko
 categories:
   - Unity
 tags:
   - Unity
-  - WebSocket
+  - JSON
+  - Convert
 ---
 
 
