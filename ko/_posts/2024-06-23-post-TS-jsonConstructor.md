@@ -1,6 +1,6 @@
 ---
 title: "[Unity(C#)] Trouble Shooting - JsonConvert.DeserializeObject 에러"
-excerpt: "트러블 슈팅: Unity 클라이언트에서 Json 데이터를 역직렬화할 때 발생하는 에러"
+excerpt: "트러블 슈팅: Unity 클라이언트에서 Json 데이터를 디시리얼라이즈할 때 발생하는 에러"
 layout: single
 lang: ko
 categories:
@@ -14,7 +14,7 @@ tags:
 
 # 상황
 
-Go 서버에서 `MessageWrapper` 구조체를 통해 JSON 데이터를 클라이언트에 전달하고, 클라이언트에선 JSON 데이터를 받아 디시리얼라이즈(Deserialize)해 값에 접근한다. 근데 클라이언트가 websocket에서 값을 받아오려고만 하면 에러가 발생한다.
+Go 서버에서 `MessageWrapper` 구조체를 통해 JSON 데이터를 클라이언트에 전달하고, 클라이언트에선 JSON 데이터를 받아 역직렬화(Deserialize)해 값에 접근한다. 근데 클라이언트가 websocket에서 값을 받아오려고만 하면 에러가 발생한다.
 
 ## 에러
 
