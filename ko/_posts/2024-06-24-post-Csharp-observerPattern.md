@@ -39,9 +39,11 @@ Observer 패턴을 사용하면 상태 변화가 있을 때만 이벤트를 실�
 ## 구현 방법
 
 1. **사전 설정**
+
 GameManager가 상태 변경 이벤트(`event`)를 발생시키도록 설정하고, `MainSceneManager`가 해당 이벤트를 **핸들(handle)** 하도록 설정한다.
    
 2. **Event 선언**
+
 ```csharp
 public enum GameState
 {
@@ -69,6 +71,7 @@ public class GameManager : SingletonObj<GameManager>
 ```
 
 3. **MainSceneManager에서 이벤트 핸들링(Handling)**
+
 ```csharp
 public class MainSceneManager : MonoBehaviour
 {
@@ -96,12 +99,14 @@ public class MainSceneManager : MonoBehaviour
 ```
 
 ### 구현 정리
+
 `GameManager`에서 상태가 변경될 때마다 `OnStateChanged` 이벤트를 발생시키고, `MainSceneManager`에서는 이 이벤트를 유지해 상태 변화에 따라 UI를 업데이트할 수 있다.
 
 **Observer 패턴**을 사용함으로써 이벤트 호출이 발생했을 때 딱 필요한 작업만 수행하게 했고, 성능 저하를 최소화할 수 있었다.
 
 
 ## 한 줄 한 줄 해부하기
+
 좀 더 자세히 코드를 살펴보자.
 
 ### GameManager.cs
@@ -109,11 +114,13 @@ public class MainSceneManager : MonoBehaviour
 ```csharp
 public delegate void StateChangedHandler(GameState newState);
 ```
+
 `delegate`는 C#에서 함수의 형식을 정의하는 타입이다. `StateChangedHandler`라는 이름의 `delegate`를 정의하고, 이는 `GameState` 타입의 인자를 받을 수 있도록 사전 구성을 한다.
 
 ```csharp
 public event StateChangedHandler OnStateChanged;
 ```
+
 `event`는 `delegate` 인스턴스를 다루기 위한 타입으로, `OnStateChanged` 이벤트는 `StateChangedHandler`는 `delegate` 형식이며, 이 이벤트는 상태 변경 시 호출될 함수들을 등록하는 데 사용한다.
 
 ```csharp
@@ -126,6 +133,7 @@ public void SetState(GameState newState)
     }
 }
 ```
+
 `SetState` 함수는 `CurrentState` 값을 변경하며, 상태가 변경되면 `Invoke`를 호출해 `OnStateChanged` 이벤트를 발생시킨다. 그러면 등록된 모든 함수들을 호출하며, `OnStateChanged?`를 사용해줌으로써 `OnStateChanged` 이벤트가 null이 아닐 때만 호출이 발생한다.
 
 ### MainSceneManager.cs
@@ -148,6 +156,7 @@ private void OnDisable()
     GameManager.Instance.OnStateChanged -= HandleStateChanged;
 }
 ```
+
 `OnDisable` 메서드는 객체가 비활성화될 때 호출되며, 여기서는 `OnStateChanged` 이벤트에서 `HandleStateChanged` 함수를 제거한다.
 
 이 작업을 함으로써 메모리 누수나 불필요한 호출을 방지할 수 있다.
@@ -160,4 +169,5 @@ private void HandleStateChanged(GameState newState)
     grpInGame.SetActive(newState == GameState.InGame);
 }
 ```
+
 `HandleStateChanged` 메서드는 `GameManager`에서 상태가 변경될 때 호출되며, `newState` 값을 받아와 각 상태에 맞게 UI 요소들을 활성화하거나 비활성화하는 실질적인 작업을 진행한다.
