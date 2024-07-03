@@ -4,10 +4,10 @@ excerpt: "파이썬에서 각 자료형에 대해 formatting 하기"
 layout: single
 lang: ko
 categories:
-  - Unity
+  - Python
 tags:
-  - Unity
-  - Key
+  - Python
+  - Format
 ---
 
 # 포매팅(formatting)의 필요성
