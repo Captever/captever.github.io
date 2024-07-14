@@ -20,7 +20,7 @@ title                    : "Captever's Dev Blog"
 title_separator          : "-"
 subtitle                 : "To be changed to enable language selection" # site tagline that appears below site title in masthead
 name                     : "Captever"
-description              : "An amazing website."
+description              : "A development blog of someone aspiring to be a developer"
 url                      : "https://captever.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
