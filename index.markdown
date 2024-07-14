@@ -7,4 +7,6 @@ layout: home
 
 **Current goal**
 
+---
+
 Game developer capable of developing both the game client and the game server.
