@@ -5,6 +5,4 @@
 layout: home
 ---
 
-# Current goal
-
-Game Development with Rust and Bevy
+Game developer capable of developing both the game client and the game server.
