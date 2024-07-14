@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Current goal
 ---
 
 Game developer capable of developing both the game client and the game server.
