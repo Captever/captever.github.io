@@ -1,6 +1,6 @@
 ---
 title: "[AWS(Amazon Web Service)] 윈도우 환경에서 localhost로 AWS 서비스 이용하기"
-excerpt: 윈도우 환경에서 localhost 환경에서 AWS CLI 설치 진행하기
+excerpt: 윈도우 환경에서 localhost로 AWS CLI 설치 진행하기
 layout: single
 lang: ko
 categories:
